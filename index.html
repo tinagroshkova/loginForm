@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gochi+Hand&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+        <a href="#home">Home</a>
+    </nav>
+
+    <div class="page" id="login">
+
+        <form id="loginForm">
+            <input name="username" type="text" id="usernameInput" placeholder="Username" required>
+            <input name="pass" type="password" id="passwordInput" placeholder="Password" required>
+            <input type="submit" id="loginButton" value="Login">
+            <span id="loginError"></span>
+            <p>Don't have an account?<a href="#register" id="registerLink">Register</a></p>
+        </form>
+
+    </div>
+
+    <div class="page" id="register">
+
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <input type="password" id="confirm-pass" placeholder="Confirm Password" required>
+            <input type="submit" id="registerButton" value="Register">
+            <span id="registerError"></span>
+        </form>
+    </div>
+
+    <div class="page" id="home">
+    </div>
+    <footer>
+        <p>Website created by: Tina Groshkova</p>
+        <p>All rights reserved ® 2023</p>
+    </footer>
+    <script src="./js/UserManager.js"></script>
+    <script src="./js/ViewController.js"></script>
+
+
+</body>
+</html>
